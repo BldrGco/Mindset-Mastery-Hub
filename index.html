@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mindset Mastery Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Chart.js for graphs -->
+</head>
+<body>
+    <div class="container">
+        <!-- Dashboard -->
+        <section id="dashboard">
+            <h1>Mindset Mastery Hub</h1>
+            <p>Day <span id="current-day">1</span> of 90</p>
+            <div class="progress-circle" id="progress-circle"></div>
+        </section>
+
+        <!-- Daily Input -->
+        <section id="daily-input">
+            <h2>Daily Journal</h2>
+            <textarea id="journal-entry" placeholder="Write your thoughts (10 min)..."></textarea>
+            <button onclick="saveJournal()">Save</button>
+        </section>
+
+        <!-- Goals -->
+        <section id="goals">
+            <h2>Weekly Goals</h2>
+            <input type="text" id="goal-input" placeholder="e.g., Replace 'I can’t' with 'I’ll try'">
+            <button onclick="addGoal()">Add Goal</button>
+            <ul id="goal-list"></ul>
+        </section>
+
+        <!-- Graphs -->
+        <section id="graphs">
+            <h2>Progress</h2>
+            <canvas id="mood-chart"></canvas>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
